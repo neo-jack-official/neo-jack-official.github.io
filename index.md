@@ -1,6 +1,6 @@
-![Image of Yaktocat](https://github.com/neo-jack-official/neo-jack-official.github.io/blob/master/img/600x200.jpg) 
+![Image](https://github.com/neo-jack-official/neo-jack-official.github.io/blob/master/img/600x200.jpg) 
 # Neo-Jack Official 
-![Image of Yaktocat](https://github.com/neo-jack-official/neo-jack-official.github.io/blob/master/img/icono.png)
+
 En este sitio podras encontrar, contribuciones a la causa.
 Totalmente gratis.
 Todo lo que se publique en este sitio es y sera con fines educativos.
