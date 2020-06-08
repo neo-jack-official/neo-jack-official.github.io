@@ -2,7 +2,7 @@ title: NeoJack Official
 twitter_username: @Neo-Jack-Official
 
 # Build settings
-markdown: kramdown
+#markdown: kramdown
 
 #test
 ErrorDocument 404: 404.html
