@@ -1,5 +1,4 @@
-
-<A <IMG SRC="https://github.com/neo-jack-official/neo-jack-official.github.io/blob/master/img/600x200.jpg" alt="Logo"></a>
+<IMG SRC="https://github.com/neo-jack-official/neo-jack-official.github.io/blob/master/img/600x200.jpg" alt="Logo">
 # Neo-Jack Official 
  
 
