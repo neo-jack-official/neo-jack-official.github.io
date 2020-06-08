@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+<head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Neo-Jack Official</title>
+        <meta name="description" content="" />
+        <link rel="icon" href="img/icono.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+<!-- funciones raton -->
+<script type="text/javascript" language="Javascript">document.oncontextmenu = function(){return false}</script>
+
+<!-- Menu 1 -->
+<div class="sidenav">
+<!-- Home -->
+  <a href="index.html" target="_parent"><i class="fa fa-fw fa-home"></i> Home</a>
+<!-- Python 3 -->
+  <button class="dropdown-btn"><i class="fa fa-fw fa-code"></i> Python 3.6
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <!-- FasterJack -->
+    <a href="fasterjack.html" target="_parent"><i class="fa fa-fw fa-cogs"></i> FasterJack</a>
+    <!-- HostJack 2.0 -->
+    <a href="hostjack20.html"  target="_parent"><i class="fa fa-fw fa-wrench"></i> HostJack 2.0</a>
+    <!-- LibJack -->
+    <a href="libjack.html"  target="_parent"><i class="fa fa-fw fa-wrench"></i> LibJack</a>
+  </div>
+<!-- Python2 -->
+  <button class="dropdown-btn"><i class="fa fa-fw fa-code"></i> Python 2.7
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <!-- FastJack -->
+    <a href="fastjack.html" target="_parent"><i class="fa fa-fw fa-cogs"></i> FastJack</a>
+    <!-- SlowJack -->
+    <a href="slowjack.html" target="_parent"><i class="fa fa-fw fa-cogs"></i> SlowJack</a>
+    <!-- HostJack -->
+    <a href="hostjack.html" target="_parent"><i class="fa fa-fw fa-wrench"></i> HostJack</a>
+  </div>
+<!-- E-mail -->
+<button class="dropdown-btn"><i class="fa fa-fw fa-envelope"></i> Contacto
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <!-- E-mail -->
+    <a href="mailto:5e6bkfmlesvqzefmvbofzvfgih7fwpfl@dhosting4xxoydyaivckq7tsmtgi4wfs3flpeyitekkmqwu4v4r46syd.onion?subject=From%20web%20Onion" target="_top"><i class="fa fa-fw fa-envelope"></i> E-mail</a>
+    <!-- GitHub -->
+    <a href="https://github.com/neo-jack-official" target="_blank"><i class="fa fa-fw fa-github"></i> GitHub</a>
+    <!-- Twitter -->
+    <a href="https://twitter.com/NeoJackOfficial" target="_blank"><i class="fa fa-fw fa-twitter"></i> Twitter</a>
+  </div>
+  <!-- Chat -->
+  <button class="dropdown-btn"><i class="fa fa-comments-o"></i> Chat Anonimo
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <!-- Español -->
+      <a href="http://yscssapth4fmwnd2v5qflewpxxrzgbwizzculigknjc34af474pl2lyd.onion/index.php?lang=es" target="_blank"><i class="fa fa-comment-o"></i> Español</a>
+      <!-- Ingles -->
+      <a href="http://yscssapth4fmwnd2v5qflewpxxrzgbwizzculigknjc34af474pl2lyd.onion/index.php?lang=en" target="_blank"><i class="fa fa-comment-o"></i> English</a>
+      <!-- Aleman -->
+      <a href="http://yscssapth4fmwnd2v5qflewpxxrzgbwizzculigknjc34af474pl2lyd.onion/index.php?lang=de" target="_blank"><i class="fa fa-comment-o"></i> Deutsch</a>
+      <!-- Frances -->
+      <a href="http://yscssapth4fmwnd2v5qflewpxxrzgbwizzculigknjc34af474pl2lyd.onion/index.php?lang=fr" target="_blank"><i class="fa fa-comment-o"></i> Français</a>
+    </div>
+
+<!-- java Script para Menu -->
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+
+</body>
+</html>
+
