@@ -1,0 +1,37 @@
+# LibJack (libjack.py)
+# Es una Herramienta que te ayuda a instalar las librerías Python faltantes por Neo-Jack JUN/2020
+
+## ¿Qué es LibJack?
+
+Es una simple herramienta que te permite Intsllar cualquier librería python que requieras.
+Evita complejos códigos, fácil de usar, instala librerías Python 2.7 y 3.x.
+Esta versión es solo disponible para WINDOWS 64-Bite
+
+##Requisitos básicos
+1. Windows 64-Bite
+
+## Que código Fuente utiliza?
+Python 3.6
+
+## Como lo conviertes a un .EXE?
+Utilizando la siguiente herramienta
+* `auto-python-to-exe`
+
+## ¿Como funciona LibJack?
+1. Te pregunta por la librería que requieres Ejemplo: colorama.
+2. Luego te pregunta, para que versión de Python necesitas esa librería.
+3. Solicita confirmación de Información.
+4. Realiza verificación de instalación PIP si no lo tiene instalado, el programa intentara instalarlo, es requerido para instalar  las Librerías
+5. Luego procede a Instalar la Librería.
+
+## Como lo utilizo?
+
+Descarga el archivo comprimido en Escritorio:
+1) Descomprime en `cd Escritorio`, o simplemente dale doble click.
+2) Ejecuta el archivo dentro del .ZIP
+
+## Opciones de Configuracion
+
+TODO es Preguntado desde el Programa
+* `Librería requerida`
+* `para que versión de Python`
