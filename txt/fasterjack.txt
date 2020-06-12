@@ -1,51 +1,61 @@
 
 # FasterJack para Python 3 (fasterjack.py)
-# Es una Herramienta de denegacion para Servidores-Web por Neo-Jack FEB/2020
+# Es una Herramienta de denegación para Servidores-Web por Neo-Jack FEB/2020
 
 ## ¿Qué es FasterJack?
-En esta version, hemos querido pasar de una aplicacion simple a algo un poco mas sofisticado de forma sutil.
-En la prectica es uan herramienta de denegacion o testeo de stress para sitios web.
-La complejidad del programa se basa en la interaccion con sus subprogramas internos.
+
+En esta versión, hemos querido pasar de una aplicación simple a algo un poco mas sofisticado de forma sutil.
+En la practica es una herramienta de denegación o testeo de estrés para sitios web.
+La complejidad del programa se basa en la interacción con sus subprogramas internos.
 Lo que permiten un mejor control de cada aspecto del funcionamiento, con notificaciones de los procesos.
 Incorpora dentro de sus funciones:
-Mayor y mas eficientes Agentes de Navegacion que se asignan automaticamente en cada conexion y re-conexion del cliente.
-Permitiendo una eficiencia mayor, y taza de deteccion inferior. Lo que hace requerir menos clientes al minuto de usar el programa.
-en un rango de 30 a 115 clientes.
-El paquete a enviar que en el fondo es un simple mensage que da instruciones al servidor, parcialmente editable en header.txt 
-Bots Verificadores, que se ejecutan al comienzo para validar el sitio web o puerto, reduciendo fallos o uso del progrma en modo fantasma. Modo fantasma es cuando crees estar usando el programa en un servidor pero nunca fue de esa manera.
-Tambien contiene opcion a acceso al Socket5 o conexion TOR, para su seguridad. con verificador de IP, para evitar uso fantasma de proteccion.
-Implementa el nuevo sistema de conexion socket.socket(socket.AF_INET, socket.SOCK_STREAM) ya testeado en HostJack que a demostrado mayor eficiencia a la conexion y bloqueos.
-Tambien se incorpora Bot Metodos lo que permite utilizar el programa en GET, POST o RANDOM por defecto.
-Como es usual en este tipo de aplicaciones utiliza un minimo de ancho de banda, lo que es muy util para no agotar nuestra capacidad de Internet.
+Mayor y mas eficientes Agentes de Navegación que se asignan automáticamente en cada conexión y re-conexión del cliente.
+Permitiendo una eficiencia mayor, y taza de detección inferior. Lo que hace requerir menos clientes al minuto de usar el programa.
+En un rango de 30 a 115 clientes.
+El paquete a enviar que en el fondo es un simple mensaje que da instrucciones al servidor, parcialmente editable en header.txt.
+
+Bots Verificadores, que se ejecutan al comienzo para validar el sitio web y/o puerto, reduciendo fallos o uso del programa en modo fantasma. Modo fantasma es cuando crees estar usando el programa en un servidor pero nunca fue de esa manera.
+También contiene opción a acceso al Socket5 o conexión TOR, para su seguridad. con verificador de IP, para evitar uso fantasma de protección.
+
+Implementa el nuevo sistema de conexión socket.socket(socket.AF_INET, socket.SOCK_STREAM) ya testeado en HostJack que a demostrado mayor eficiencia a la conexión TCP y bloqueos.
+
+También se incorpora Bot Métodos lo que permite utilizar el programa en GET, POST o RANDOM por defecto.
+Como es usual en este tipo de aplicaciones utiliza un mínimo de ancho de banda, lo que es muy útil para no agotar nuestra capacidad de Internet.
 
 ##Como Funciona FasterJack
-FasterJack envia un paquete (encabezado) por cada cliente, con datos falsos pero que el servidor pueda reconocerlos como validos pero incompletos, al generar una conexion.
+FasterJack enviá un paquete (encabezado) por cada cliente, con datos falsos pero que el servidor pueda reconocerlos como validos pero incompletos, al generar una conexión.
 Por lo Cual el Servidor quedara a la espera del resto del encabezado que el cual nunca llegara.
-los Servidores por lo general estan configurados por defecto a esperar 120 segundos aproximandamente por cliente que envie el paquete.
+Los Servidores por lo general están configurados por defecto a esperar 120 segundos aproximadamente por cliente que envié el paquete.
 Lo cual causa que cada cliente agote los recursos lógicos del servidor, hasta que se satura y falla.
 
-## Que version python utiliza?
+##Como Funciona FasterJack
+FasterJack enviá un paquete (encabezado) por cada cliente, con datos falsos pero que el servidor pueda reconocerlos como validos pero incompletos, al generar una conexión.
+Por lo Cual el Servidor quedara a la espera del resto del encabezado que el cual nunca llegara.
+los Servidores por lo general están configurados por defecto a esperar 120 segundos aproximadamente por cliente que envié el paquete.
+Lo cual causa que cada cliente agote los recursos lógicos del servidor, hasta que se satura y falla.
+
+## Que versión Python utiliza?
 Python 3.6
 
-## Como se que version python tengo?
+## Como se que versión Python tengo?
 * `python -V | python3 -V`
 
 
-## Como lo utiliso?
+## Como lo utilizo?
 
-Si `fasterjack.py` y sus dependencias estan en Escritorio:
+Si `fasterjack.py` y sus dependencias están en Escritorio:
 1) Abra terminal, Escriba `cd Escritorio`
 2) Ejecute bajo Python 3.6:
 * `python3 fasterjack.py -t www.ejemplo.com` 
-* `python3 fasterjack.py -h` para acceder al menu de ayuda.
+* `python3 fasterjack.py -h` para acceder al menú de ayuda.
 
 ## Opciones de Configuracion
 
-* `-h = Menu de Ayuda`
+* `-h = Menú de Ayuda`
 * `-t = Web o IP`
 * `-p = Puerto   --> defecto: 80 Optimo: [80 o 443]`
 * `-c = Clientes --> defecto: 50 Optimo: [30-135]`
-* `-m = Metodo   --> defecto: RANDOM Opciones: [get o post]`
+* `-m = Método   --> defecto: RANDOM Opciones: [get o post]`
 * `-T = Habilitar el enrutamiento TOR, por defecto: Desactivado`
 
 
@@ -60,7 +70,7 @@ Si `fasterjack.py` y sus dependencias estan en Escritorio:
 
 ## Como Instalar PYTHON 3.6 ?
 ## Termux
-Seguir instrucciones Linux Sudo y remplazar codigo.
+Seguir instrucciones Linux Sudo y remplazar código.
 Remplazar: 
 * `sudo apt-get`
 * `sudo apt-get install`
