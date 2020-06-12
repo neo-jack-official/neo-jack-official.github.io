@@ -1,0 +1,62 @@
+# FasterJack para Windows 64
+# Es una Herramienta de denegación para Servidores-Web por Neo-Jack JUN/2020
+
+## ¿Qué es FasterJack?
+En esta versión, hemos querido pasar de una aplicación simple a algo un poco mas sofisticado de forma sutil.
+En la practica es una herramienta de denegación o testeo de estrés para sitios web.
+La complejidad del programa se basa en la interacción con sus subprogramas internos.
+Lo que permiten un mejor control de cada aspecto del funcionamiento, con notificaciones de los procesos.
+Incorpora dentro de sus funciones:
+Mayor y mas eficientes Agentes de Navegación que se asignan automáticamente en cada conexión y re-conexión del cliente.
+Permitiendo una eficiencia mayor, y taza de detección inferior. Lo que hace requerir menos clientes al minuto de usar el programa.
+En un rango de 30 a 115 clientes.
+El paquete a enviar que en el fondo es un simple mensaje que da instrucciones al servidor, parcialmente editable en header.txt.
+
+Bots Verificadores, que se ejecutan al comienzo para validar el sitio web y/o puerto, reduciendo fallos o uso del programa en modo fantasma. Modo fantasma es cuando crees estar usando el programa en un servidor pero nunca fue de esa manera.
+También contiene opción a acceso al Socket5 o conexión TOR, para su seguridad. con verificador de IP, para evitar uso fantasma de protección.
+
+Implementa el nuevo sistema de conexión socket.socket(socket.AF_INET, socket.SOCK_STREAM) ya testeado en HostJack que a demostrado mayor eficiencia a la conexión TCP y bloqueos.
+
+También se incorpora Bot Métodos lo que permite utilizar el programa en GET, POST o RANDOM por defecto.
+Como es usual en este tipo de aplicaciones utiliza un mínimo de ancho de banda, lo que es muy útil para no agotar nuestra capacidad de Internet.
+
+##Como Funciona FasterJack
+FasterJack enviá un paquete (encabezado) por cada cliente, con datos falsos pero que el servidor pueda reconocerlos como validos pero incompletos, al generar una conexión.
+Por lo Cual el Servidor quedara a la espera del resto del encabezado que el cual nunca llegara.
+Los Servidores por lo general están configurados por defecto a esperar 120 segundos aproximadamente por cliente que envié el paquete.
+Lo cual causa que cada cliente agote los recursos lógicos del servidor, hasta que se satura y falla.
+
+##TOR-Network
+
+Incorpora TOR Expert Bundle, es un servicio oficial que entrega Torproject, el cual nos permite generar un servidor de conexión TOR mediante Proxi a SOCKET 5
+
+Solo tienes que ejecutar TOR.EXE, esperar 5 segundos aproximadamente.
+Darle tiempo al programa para que conecte el proxi.
+
+Y luego puedes ejecutar FASTERJACK
+
+
+## Como lo utilizo?
+
+
+
+Si descargas el archivo en Escritorio:
+1) Descomprime lo: abre el archivo, y la carpeta dentro del .ZIP arrastrala al Escritorio.
+2) Si es tu primera vez, Ejecuta INICIO.EXE (START.exe versión en ingles)
+3) Activa TOR EXPERT BUNDLE, y espera unos 5 segundos a que se inicie y cargue.
+4) Minimiza la ventana TOR.EXE (NO LA CIERRES), y la ventana INICIO.EXE puedes cerrarla
+5) estas listo para ejecutar FASTERJACK.EXE
+El resto de las instrucciones son desplegadas desde la aplicación.
+
+## Opciones de Configuración
+
+La configuración se la das tu, y es el pequeño cuestionario que pregunta al principio en las primeras 5 pantallas.
+Web o IP, Puerto, Clientes, Metodo, Tor Network
+
+
+NOTA: El programa es autónomo o portable, no requiere instalación Python previa,
+incorpora todos los archivos necesarios para emular un terminal Python, e incluye todas las Librerías que el programa necesita.
+Incluido Tor Expert Bundle.
+Si usted tiene instalado Python3, Anaconda, u otro. Puede interactuar con el código fuente de FASRTERJACK (fasterjack.py), modificar o editar, y obviamente testear.
+La modificación del código fuente NO afectara los archivos ejecutables .EXE.
+Herramienta es creada con fines educativos, de testeo de estrés a servidores web.
