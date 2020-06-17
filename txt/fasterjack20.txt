@@ -1,0 +1,81 @@
+# FasterJack para Python 3 (fasterjack.py)
+# Es una Herramienta de denegación para Servidores-Web por Neo-Jack JUN/2020
+
+##Novedades
+
+versión 2.2
+Incorpora:
+1) Nuevo método de funcionamiento sin código como la versión Windows (Iniciar con: python3 fasterjack.py)
+2) Nueva visualización
+3) Menú configurable (config.py)
+4) Multilenguaje (Ingles, Español, Portuges)
+5) Verificador e instalador de Librerías
+6) Verificador e instalador servicio Tor (Tor Expert Bundle para LINUX)
+7) Mejora de compatibilidad con Windows y Linux: Debian, Ubuntu, Fedora, openSUSE.
+8) Librería externa para editar lenguaje a gusto "language/leng_default.py"
+9) Asociación directa de puertos a HTTP o HTTPS
+
+## ¿Qué es FasterJack?
+
+En la practica es una herramienta de denegación o testeo de estrés para sitios web.
+La complejidad del programa se basa en la interacción con sus sub-programas internos.
+Lo que permiten un mejor control de cada aspecto del funcionamiento, con notificaciones de los procesos en el idioma seleccionado.
+Incorpora dentro de sus funciones:
+Mayor y mas eficientes Agentes de Navegación que se asignan automáticamente en cada conexión y re-conexión del cliente.
+Permitiendo una eficiencia mayor, y taza de detección inferior. Lo que hace requerir menos clientes al minuto de usar el programa.
+En un rango de 30 a 115 clientes.
+El paquete a enviar que en el fondo es un simple mensaje que da instrucciones al servidor, parcialmente editable en header.txt.
+
+Bots Verificadores, que se ejecutan al comienzo para validar el sitio web y/o puerto, reduciendo fallos o uso del programa en modo fantasma. Modo fantasma es cuando crees estar usando el programa en un servidor pero nunca fue de esa manera.
+También contiene opción a acceso al Socket5 o conexión TOR, para su seguridad. con verificador de IP, para evitar uso fantasma de protección.
+
+Implementa el nuevo sistema de conexión socket.socket(socket.AF_INET, socket.SOCK_STREAM) que a demostrado mayor eficiencia a la conexión TCP.
+
+También se incorpora Bot Métodos lo que permite utilizar el programa en GET, POST o RANDOM por defecto.
+Como es usual en este tipo de aplicaciones utiliza un mínimo de ancho de banda, lo que es muy útil para no agotar nuestra capacidad de Internet.
+
+##Como Funciona FasterJack
+FasterJack enviá un paquete (encabezado) por cada cliente, con información falsa pero que el servidor pueda reconocerlos como validos pero incompletos, al generar una conexión.
+Por lo Cual el Servidor quedara a la espera del resto del encabezado que el cual nunca llegara.
+Los Servidores por lo general están configurados por defecto a esperar 120 segundos aproximadamente por cliente que envié el paquete.
+Lo cual causa que cada cliente agote los recursos lógicos del servidor, hasta que se satura y falla.
+
+
+## Que versión Python utiliza?
+Python 3.6
+
+## Como se que versión Python tengo?
+* `python -V | python3 -V`
+
+
+## Como lo utilizo?
+
+Si `fasterjack.py` y sus dependencias están en Escritorio:
+1) Abra terminal, Escriba `cd Escritorio`
+2) Ejecute bajo Python 3.6:
+* `python3 fasterjack.py` 
+
+
+## Opciones de Configuracion
+
+En menú "config.py":
+1) Selección de Idioma
+2) Verificar e instalar PIP
+3) Verificar e instalar dependencias
+4) Verificar e instalar servicio Tor y https
+5) Modificar valores por defecto: Puerto
+6) Modificar valores por defecto: Clientes
+7) Modificar valores por defecto: Activar o no TOR
+8) Acceso a modificación de Server Ip-Checker 1 y 2
+9) Acceso a modificar parte del paquete a entregar
+
+En la aplicación:
+1) Escoger Sitio Web o IP de carácter Obligatorio
+2) Seleccionar puerto [80 o 443] defecto: 80
+3) Seleccionar si desea Activar Tor Network defecto: Desactivado
+4) Seleccionar cantidad de clientes optimo [30-135] defecto 60
+5) Seleccionar Método entre Get o Post defecto: Random
+
+## Como se si tengo Tor Network instalado?
+Abrir Terminal:
+* `tor --version`
