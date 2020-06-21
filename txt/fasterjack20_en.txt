@@ -3,7 +3,7 @@
 
 ## News
 
-version 2.2
+version 2.3
 It incorporates:
 1) New codeless working method like Windows version (Start with: python3 fasterjack.py)
 2) New display
