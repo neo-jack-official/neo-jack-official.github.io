@@ -3,7 +3,7 @@
 
 ##Novedades
 
-versión 2.2
+versión 2.3
 Incorpora:
 1) Nuevo método de funcionamiento sin código como la versión Windows (Iniciar con: python3 fasterjack.py)
 2) Nueva visualización
