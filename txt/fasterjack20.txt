@@ -1,9 +1,21 @@
 # FasterJack para Python 3 (fasterjack.py)
-# Es una Herramienta de denegación para Servidores-Web por Neo-Jack JUN/2020
+# Es una Herramienta de denegación para Servidores-Web por Neo-Jack
 
 ##Novedades
 
-versión 2.3
+🍀 FasterJack 2.4 🍀 (🔥Nuevas ACTUALIZCIONES🔥)🇧🇷/🇪🇸/🇺🇸: JUL 2020
+📌 Paquete: REFERENCIA de forma automatica aosciada a una lista aleatoria de sitios. 
+📌 Paquete: Random KeepAlive, Timeout and Max
+📌 Paquete: Extra malicioasa Data
+📌 3 formas de metodos de paquete malicioso
+📌 Confirmacion de recepcion de paquete, bloqueo o TimeOut
+📌 Notificacion  en Bytes de tamaño del Paquete
+📌 Forzar nuevo agente si el paquete es bloqueado y re-coneccion de ser necesario.
+📌 Mejora de rendimiento, menos notificaciones
+📌 Real True Random metodos
+📌 Nuevas configuraciones en config.py
+
+versión 2.3 JUN 2020
 Incorpora:
 1) Nuevo método de funcionamiento sin código como la versión Windows (Iniciar con: python3 fasterjack.py)
 2) Nueva visualización
