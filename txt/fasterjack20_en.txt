@@ -3,7 +3,19 @@
 
 ## News
 
-version 2.3
+🍀 FasterJack 2.4 🍀 (🔥New UPDATES🔥) 🇧🇷 / 🇪🇸 / 🇺🇸: JUL 2020
+📌 Package: REFERENCE automatically associated to a random list of sites.
+📌 Package: Random KeepAlive, Timeout and Max
+📌 Package: Extra Malicioasa Data
+📌 3 ways of malicious packet methods
+📌 Confirmation of package reception, blocking or TimeOut
+📌 Notification in Bytes of Package Size
+📌 Force new agent if the package is blocked and reconnect if necessary.
+📌 Performance improvement, less notifications
+📌 Real True Random methods
+📌 New configurations in config.py
+
+version 2.3 JUN 2020
 It incorporates:
 1) New codeless working method like Windows version (Start with: python3 fasterjack.py)
 2) New display
